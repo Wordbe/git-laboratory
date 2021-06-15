@@ -12,10 +12,15 @@ $ git checkout -b feature/wordbe/#1-write-todo
 ```shell
 # Working Directory -> Staging Area
 $ git add [수정한 파일]
+
 # Staging Area -> Repository
 $ git commit -m "feat: 할일 입력"
+
 # Respository -> 원격저장소
-$ git push
+$ git push # 실패
+# 브랜치를 새로 생성한 후에는 푸쉬할 원격저장소와 이어주어야 함
+# 다음부터는 바로 push 해도 됨
+$ git push --set-upstream origin feature/wordbe/#1-write-todo
 ```
 
 3. pull request 작성
